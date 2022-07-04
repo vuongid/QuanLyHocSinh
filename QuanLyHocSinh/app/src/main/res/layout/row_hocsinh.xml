@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="12">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="5">
+        <TextView
+            android:id="@+id/txtHoten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ tên học sinh"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtNgaySinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHoten"
+            android:text="Ngày sinh 01/01/1999"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtGioiTinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới tính: Nam"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtXepLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xếp loại: Giỏi"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/imgSua"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@android:drawable/ic_menu_edit" />
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/imgXoa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@android:drawable/ic_menu_delete" />
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThongTinHSActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÔNG TIN HỌC SINH"
+        android:textSize="30dp"
+        android:id="@+id/txtTT"/>
+    <TextView
+        android:layout_below="@+id/txtTT"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHoten"
+        android:text="Họ tên học sinh"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtNgaySinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHoten"
+        android:text="Ngay sinh: 00/00/0000"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/txtGioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNgaySinh"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:text="Gioi tinh: Nam"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtTenLop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNgaySinh"
+        android:text="Lop: 12A1"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTenLop"
+        android:text="Dia chi hoc sinh"
+        android:textSize="25sp" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:id="@+id/line1">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtToan"
+            android:text="Toan: 10"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtVan"
+            android:text="Van: 10"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAnh"
+            android:text="Anh: 10"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtXepLoai"
+        android:text="Xep loai: Gioi"
+        android:textSize="25sp"/>
+</RelativeLayout>

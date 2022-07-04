@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/txtTT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="THÊM HỌC SINH"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtHoTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTT"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:ems="8"
+        android:hint="Nhập tên học sinh" />
+    <RadioGroup
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtTT"
+        android:layout_toRightOf="@+id/edtHoTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdigroupGT"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:id="@+id/radioNam"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nữ"
+            android:id="@+id/radioNu"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtHoTen"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edtNgaySinh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:focusable="false"
+            android:hint="Ngày sinh"/>
+
+        <Spinner
+            android:layout_marginLeft="30dp"
+            android:id="@+id/snLop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:backgroundTint="@color/white"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:hint="Nhập địa chỉ" />
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edtDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/line2"
+        android:weightSum="3">
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtToan"
+            android:hint="Điểm Toán"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtVan"
+            android:hint="Điểm Văn"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtAnh"
+            android:hint="Điểm Anh"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnThemHS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btnHuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/btnThemHS"
+        android:text="Huỷ" />
+
+</RelativeLayout>
